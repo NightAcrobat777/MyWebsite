@@ -1,0 +1,206 @@
+<!--Gabriel Martinez
+    About me website-->
+<!doctype HTML>
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <!--Import style sheet to use css-->
+        <link rel="stylesheet" href="styles.css">
+        <!--link google font; font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=MedievalSharp&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+    </head>
+    <body>
+        <h1>All About Me</h1>
+        <div id="header_image">
+            <img id="profile" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" width="350px" height="350px"/>
+        </div>
+        <main>
+            <!--Video player to switch between music and pause/play/reset buttons-->
+            <button onclick="playVid()" type="button"> Play </button>
+            <button onclick="pauseVid()" type="button"> Pause </button>
+            <button onclick="resetVid()" type="button"> Reset </button><br>
+            <video id="marioSlider" width="320" height="240">
+                <source src="https://vgmsite.com/soundtracks/super-mario-64-soundtrack/zqtpbfkskm/06%20Slider.mp3" type="video/mp4">
+            </video>
+            <video id="hauntedHouse" hidden width="320" height="240">
+                <source src="https://vgmsite.com/soundtracks/super-mario-64-soundtrack/nuzgarpsup/12%20Haunted%20House.mp3">
+            </video>
+            
+            
+            <!--use sections tabs instead of div-->
+            <section>
+                <p class = "titles">My name is Gabriel M</p>
+                <ul>
+                    <li>I am 20 years old</li>
+                    <li>I live in San Diego</li>
+                    <li>My major is Computer Science</li>
+                </ul>
+            </section>
+            <!--bad guys-->
+            <div class="flyingNPC">
+                <img class="boosStyle1" src="https://66.media.tumblr.com/9266411f796476c4212b5172b4bd59f4/tumblr_mix1zzmUmZ1rfjowdo1_500.gif" width="50px" height="75px"/>
+                <img class="boosStyle1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fee47505-8b66-4861-b3fb-1fc7ec345ba4/ddjdd7r-7acb44b5-3579-44f7-a0d2-8c6f1b2a0a5f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZlZTQ3NTA1LThiNjYtNDg2MS1iM2ZiLTFmYzdlYzM0NWJhNFwvZGRqZGQ3ci03YWNiNDRiNS0zNTc5LTQ0ZjctYTBkMi04YzZmMWIyYTBhNWYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b_sI9ZsVS85a9_03NrVS3oR1FRE0xvQ81Fd4w6XSUFA" width="150px" height="100px"/>
+            </div>
+            <div>
+                <p class="titles">Hobbies:</p>
+                <ul>
+                    <li>Playing basketball</li>
+                    <li>Playing video games</li>
+                    <li>Traveling</li>
+                    <li>Creating new experiences</li>
+                </ul>
+            </div>
+            <!--Flying bad guys-->
+            <div class="flyingNPC">
+                <img class="boosStyle1" src="https://66.media.tumblr.com/tumblr_mb7b2pQnSH1rfjowdo1_500.gif" width ="75" height="75"/>
+                <img class="boosStyle2" src="https://media.tenor.com/SxEswkTxF1kAAAAi/turtle-mario-gaming.gif" width="50px" height="75px"/>
+                <img class="boosStyle1" src="https://images.squarespace-cdn.com/content/v1/5705165e8259b5e516e19046/1461183530100-1BHMCDNJ8XNXONIFFMW8/image-asset.gif" height="75px" width="75px"/>
+            </div>
+        </main>
+        <!-- clash royale deck table-->
+        <table>
+            <!--clash royale emote-->
+            <img src="https://i0.wp.com/i.pinimg.com/originals/a4/d3/ce/a4d3ce7ff09e24bbc4cf265686e9becc.gif?fit=960%2C960&ssl=1" height="120px" width="150px"/>
+            <caption id="tableTitle">My Clash Royale Deck Stats</caption>
+            <thead>
+                <tr>
+                    <th class="cardData">
+                        Name
+                    </th>
+                    <th class="cardData"> 
+                        Level
+                    </th>
+                    <th class="cardData">
+                        Hitpoints
+                    </th>
+                    <th class="cardData">
+                        Damage
+                    </th>
+                    <th class="cardData">
+                        Rarity
+                    </th>
+                    <th class="cardData">
+                        Type
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="card1">
+                    <td>Lavahound</td>
+                    <td>14</td>
+                    <td>4736</td>
+                    <td>72</td>
+                    <td>Legendary</td>
+                    <td>Troop</td>
+                </tr>
+                <tr id="card2">
+                    <td >Guards</td>
+                    <td>14</td>
+                    <td>108</td>
+                    <td>161</td>
+                    <td>Epic</td>
+                    <td>Troop</td>
+                </tr>
+                <tr id="card3">
+                    <td>Zap</td>
+                    <td>14</td>
+                    <td>N\A</td>
+                    <td>254</td>
+                    <td>Common</td>
+                    <td>Spell</td>
+                </tr>
+                <tr id="card4">
+                    <td>Fireball</td>
+                    <td>14</td>
+                    <td>N\A</td>
+                    <td>913</td>
+                    <td>Rare</td>
+                    <td>Spell</td>
+                </tr>
+                <tr id="card5">
+                    <td>Phoenix</td>
+                    <td>14</td>
+                    <td>1392</td>
+                    <td>288</td>
+                    <td>Legendary</td>
+                    <td>Troop</td>
+                </tr>
+                <!--badguy-->
+                <div class="rightNPC">
+                    <img class="boosStyle1" src="https://images.squarespace-cdn.com/content/v1/5705165e8259b5e516e19046/1461183530100-1BHMCDNJ8XNXONIFFMW8/image-asset.gif" height="50px" width="50px"/>
+                </div>
+                <tr id="card6">
+                    <td>Balloon</td>
+                    <td>14</td>
+                    <td>2226</td>
+                    <td>848</td>
+                    <td>Epic</td>
+                    <td>Troop</td>
+                </tr>
+                <tr id="card7">
+                    <td>Skeleton Dragons</td>
+                    <td>14</td>
+                    <td>745</td>
+                    <td>213</td>
+                    <td>Common</td>
+                    <td>Troop</td>
+                </tr>
+                <!--badguy-->
+                <div class="centerNPC">
+                    <img class="boosStyle2" src="https://images.squarespace-cdn.com/content/v1/5705165e8259b5e516e19046/1461183530100-1BHMCDNJ8XNXONIFFMW8/image-asset.gif" height="75px" width="75px"/>
+                </div>
+                <tr id="card8">
+                    <td>Tombstone</td>
+                    <td>14</td>
+                    <td>702</td>
+                    <td>N\A</td>
+                    <td>Rare</td>
+                    <td>Building</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Clash of clans army, table-->
+        <table>
+            <caption>My Clash of Clans Army</caption>
+            <thead>
+                <tr>
+                    <td  class="armyHeaders">Army 1</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="troop1">Electro Dragon</p></td>
+                    <td><img src="https://static.wikia.nocookie.net/clashofclans/images/0/00/Electro_Dragon_info.png/revision/latest/scale-to-width-down/500?cb=20180608130641" width="50px" height="50px"/></td>
+                </tr>
+                <tr>
+                    <td><p class="troop1">Balloon</p></td>
+                    <td><img src="https://static.wikia.nocookie.net/clashroyale/images/e/ee/Balloon_red.png/revision/latest/scale-to-width-down/250?cb=20221018012456" width="50px" height="50px"/></td>
+                </tr>
+                <tr>
+                    <td><p class="troop1">Lightning</p></td>
+                    <td> <img src="https://clashofclans.hu/wp-content/uploads/2017/11/Lightning_Spell_info-1.png" width="50px" height="50px"/></td>
+                </tr>
+                <tr>
+                    <td><p class="troop1">Rage</p></td>
+                    <td> <img src="https://static.wikia.nocookie.net/clashofclans/images/8/8a/Rage_Spell_info.png/revision/latest/scale-to-width-down/200?cb=20171008204108" width="50px" height="50px"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--flying badguys-->
+        <div class="flyingNPC">
+            <img id="specialBoo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/893f2add-0cf3-43be-ac63-5296409ee911/dfeoi0d-ce966062-2d4b-466f-a0a4-3b2385498f46.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg5M2YyYWRkLTBjZjMtNDNiZS1hYzYzLTUyOTY0MDllZTkxMVwvZGZlb2kwZC1jZTk2NjA2Mi0yZDRiLTQ2NmYtYTBhNC0zYjIzODU0OThmNDYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k8HNPUqd_2Bs2b4_3b87kD6fbYjU3AQa3AWEDwddPSw", width="70px" height="70px">
+            <img class="boosStyle1" src="https://images.squarespace-cdn.com/content/v1/5705165e8259b5e516e19046/1461183530100-1BHMCDNJ8XNXONIFFMW8/image-asset.gif" height="70px" width="70px"/>
+        </div>
+        <!--Event button to switch worlds-->
+        <div id="booButton" onClick="magic()">
+            <p> DO NOT CLICK!!!!</p>
+        </div>
+        <!--Foot notes, and a link to trick the user to play pac man-->
+        <footer><p id="footnotes">Heres a <a href="https://pacman.live/play.html">LINK </a> to my profile CLICK</p></footer>  
+        <script src="script.js"></script>
+    </body>
+</html>
